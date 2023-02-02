@@ -1,0 +1,19 @@
+.group{
+    display: inline-block;
+    padding-left: 436px;
+    
+}
+.heading{
+    padding-top: 200px;
+    padding-left:550px;
+    
+}
+
+#num{
+    padding-left:610px;
+    font-size: 50px;
+}
+
+#btn_1,#btn_2,#btn_3{
+    margin: 20px;
+}
