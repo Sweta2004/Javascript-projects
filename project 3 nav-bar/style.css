@@ -1,0 +1,98 @@
+body {
+     margin: 0;
+}/*very important.without this,Can't remove white space (left and right sides) from Navbar*/
+
+ul{
+    list-style-type:none ;
+}
+.nav-center{
+    display: flex;
+    justify-content: space-between;/*justify-content can be used only with flex*/ 
+    background: black;
+    box-shadow: 5px 5px 3px rgb(238, 238, 238);/*Specify a horizontal and a vertical shadow and blur so 3 value*/
+}
+.social-icons{
+    padding-right: 80px;
+}
+.nav-header{
+    display:flex;
+}
+.nav-toggle{
+    display: none;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color:rgb(222, 113, 237);
+}
+ul{
+    display: flex;
+    /*these are important to be on center- straight line*/
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    margin: auto;
+}
+li{
+    padding-left: 20px;
+}
+.links{
+    font-family: "Trirong", serif;
+}
+.links a{
+    color:blueviolet;
+    text-decoration: none;
+}
+.social-icons a{
+    color:rgb(222, 113, 237);
+}
+.links a:hover{  /*hover over anchor tag*/
+    color: rgb(95, 221, 221);
+}
+.social-icons a:hover{
+    color: gainsboro;
+}
+@media screen and (max-width:700px){
+    .nav-toggle{
+        background: transparent;
+        border: transparent;
+        font-size: 30px;
+        display: inline-block;
+    }
+    .social-icons{
+        display: none;
+    }
+   
+    .links{ 
+        background-color:black;
+        /*Imp*/
+        position: fixed;
+        display:flex;
+        flex-direction: column;
+        top:-100%;/*very important to make it hide*/
+        /*Imp*/ 
+       
+        width: 100%;/*full screen*/
+        
+    }
+    .myown{
+        top: 0;/*important to display it back*/
+        top:36px;
+    }
+    
+
+
+
+
+
+    .nav-toggle:hover{ /*hover not work without anchor tag*/
+        color:rgb(139, 139, 197);
+        transform: rotate(90deg);
+    }
+    
+}
+
+
+
+
