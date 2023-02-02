@@ -1,0 +1,49 @@
+body{
+    background-color:#f1f5f8;
+}
+li{
+    list-style-type:none;
+    display: inline;
+    /*instead of using padding or spacing, use float*/
+    padding: 10px;
+}
+
+.nav-bar{
+    display:flex;
+    background-color: white;
+
+    position: relative;/*to move up*/
+    bottom: 10px;
+}
+.nav-bar-1{
+    padding-left: 200px;
+    padding-right: 600px;
+}
+.back_gro{
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+   /* width: fit-content; *//*way to make a border fit around text that does not fully extend horizontally across an area*/
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 25px;/*rounded edges*/
+
+    position: relative;
+    width: 165px;
+    left: 500px;
+    top: 190px;
+    
+}
+
+
+#btn{
+    position: relative;
+    left: 560px;
+    top: 220px;
+}
+#btn:hover{
+    background-color:black;
+    color: white;/*font color*/
+}
+
+
