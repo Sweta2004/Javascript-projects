@@ -1,0 +1,107 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+
+.sidebar-toggle{
+    background: transparent;
+    font-size: 25px;
+    border-color:transparent;
+    float: right;
+    display: inline-block;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    
+    width: 70%;
+    height: 30%;
+}
+.sidebar{
+    display:inline-flex;/*to keep menu icon up eventhough menu icon is out*/
+    flex-direction: column;
+    height: 100%;/*imp*/
+    background: black;
+    transform: translate(-100%);/*to hide whole sidebar*/
+    transition: all 0.5s linear;
+    
+
+    width: auto;/*imp*/
+    height: auto;
+     
+}
+.links{
+    padding-top:30px;
+    padding-left: 20px;
+    /*float: left;*/ 
+    font-size: 25px;
+}
+.links a{
+    display:block;
+    padding-bottom:30px;/*it can be used only if display is used*/
+    padding: 10px;
+    
+}
+.social-icons{
+    padding-top: 150px;
+    padding-bottom:43px;
+    padding-left: 80px;
+    display:flex;
+    gap:10px;
+}
+.social-icons a{
+    font-size: 30px;
+}
+
+.sidebar-toggle:hover{
+    color:gray;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.social-icons a:hover{
+    background: rgb(211, 211, 227);    
+}
+
+.links li:before {
+    position: absolute;
+    left   : 20px;
+    content: "          ";
+}
+.links a:hover{
+    background: rgb(211, 211, 227);
+}
+
+.cross{
+    color: red;
+    background: transparent;
+    border-color: transparent;
+    font-size: 50px;
+    transition: all 1s linear;/*Hover to see the transition*/
+}
+.cross:hover{
+    color:rgb(245, 95, 95);
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.show-sidebar{
+    transform: translate(0);
+}
